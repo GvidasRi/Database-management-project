@@ -12,7 +12,7 @@ using System.Text;
 
 public partial class Default2 : System.Web.UI.Page
 {
-    string db = "Server=kursinis-db.mysql.database.azure.com; Port=3306; Database=db; Uid=rooot@kursinis-db; Pwd=Rootroot1; SslMode=Preferred;"
+    string db = "Server=kursinis-db.mysql.database.azure.com; Port=3306; Database=db; Uid=rooot@kursinis-db; Pwd=Rootroot1; SslMode=Preferred;";
     string userid = "";
     string id, vardas;
     static string Hash(string input)
