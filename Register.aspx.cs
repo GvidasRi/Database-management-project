@@ -12,6 +12,7 @@ using System.Security.Cryptography;
 
 public partial class _Default : System.Web.UI.Page
 {
+    string db = "Server=kursinis-db.mysql.database.azure.com; Port=3306; Database=db; Uid=rooot@kursinis-db; Pwd=Rootroot1; SslMode=Preferred;"
     int pass = 0;
     string name = "";
     static string Hash(string input)
@@ -32,7 +33,7 @@ public partial class _Default : System.Web.UI.Page
     }
     protected void Button1_Click(object sender, EventArgs e)
     {
-        MySqlConnection con = new MySqlConnection("server=127.0.0.1;uid=root;pwd=;database=db");
+        MySqlConnection con = new MySqlConnection("db");
         con.Open();
         
         captcha1.ValidateCaptcha(TextBox6.Text.Trim());
