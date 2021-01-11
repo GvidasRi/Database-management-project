@@ -12,7 +12,7 @@ using System.Security.Cryptography;
 
 public partial class _Default : System.Web.UI.Page
 {
-    string db = "Server=kursinis-db.mysql.database.azure.com; Port=3306; Database=db; Uid=rooot@kursinis-db; Pwd=Rootroot1; SslMode=Preferred;"
+    string db = "Server=kursinis-db.mysql.database.azure.com; Port=3306; Database=db; Uid=rooot@kursinis-db; Pwd=Rootroot1; SslMode=Preferred;";
     int pass = 0;
     string name = "";
     static string Hash(string input)
